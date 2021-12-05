@@ -9,12 +9,34 @@ body {
   font-size: 14px;
   color: #212121;
 }
+.section {
+  padding: 94px 0;
+}
+.container {
+  padding: 0 15px;
+  width: 1200px;
+  border: 1px solid red;
+  margin: 0 auto;
+}
+.hidden {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.7;
+  overflow: hidden;
+  opacity: 0;
+}
+
 nav,
-.links,
-.contacts,
+.main-links,
+.main-contacts,
 header .container {
   display: flex;
   justify-content: space-between;
+}
+header .logo {
+  display: flex;
+  margin-right: 93px;
+  align-items: center;
 }
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -23,6 +45,7 @@ header .container {
   font-size: 26px;
   line-height: 1.2;
   color: var(--active-color);
+  letter-spacing: 0.03em;
 }
 .logo-color {
   color: var(--main-color);
@@ -34,6 +57,12 @@ header .container {
   font-size: 14px;
   line-height: 1.14;
   color: #212121;
+  display: inline-block;
+  margin-right: 50px;
+  padding: 32px 0;
+}
+.main-links li:last-child {
+  margin: 0;
 }
 .contacts {
   font-style: normal;
@@ -41,6 +70,16 @@ header .container {
   font-size: 14px;
   line-height: 1.14;
   color: #757575;
+  padding: 32px 0;
+  margin-left: 50px;
+  display: inline-block;
+}
+
+.main-contacts li:first-child {
+  margin: 0;
+}
+header {
+  border-bottom: 1px solid #ececec;
 }
 .links:hover {
   color: var(--active-color);
@@ -49,12 +88,20 @@ header .container {
   color: var(--active-color);
 }
 
+.hero {
+  max-width: 1600px;
+  display: inline-block;
+  text-align: center;
+}
 .title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
   color: #ffffff;
   background-color: #2f303a;
+  letter-spacing: 0.06em;
+  display: inline-block;
+  width: 696px;
 }
 .title-button {
   font-weight: bold;
@@ -62,23 +109,37 @@ header .container {
   line-height: 1.9;
   color: #fff;
   background-color: #188ce8;
+  display: inline-block;
+  padding: 10px 32px;
 }
-.hidden {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.7;
-  overflow: hidden;
-  opacity: 0;
+.benefits-section {
+  display: flex;
+}
+
+.benefits-section li:last-child {
+  margin-right: 0;
 }
 .benefits {
   font-weight: 700px;
   font-size: 14px;
   line-height: 1.2;
 }
+.our-mission {
+  display: flex;
+  flex-wrap: wrap;
+}
 .second-title {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.7;
+  text-align: center;
+}
+.team-members {
+  display: flex;
+}
+.team-members li {
+  margin-top: 25px;
+  padding-right: 30px;
 }
 .sub-title {
   font-weight: 400px;
@@ -96,6 +157,7 @@ header .container {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.9;
+  padding-top: 30px;
 }
 .team-jobs {
   font-weight: normal;
@@ -113,6 +175,11 @@ header .container {
   line-height: 1.7;
   color: #ffffff;
   background-color: #2f303a;
+  display: flex;
+  justify-content: space-between;
+}
+.address {
+  padding-top: 30px;
 }
 .communication {
   color: rgba(255, 255, 255, 0.6);
@@ -132,6 +199,7 @@ button:focus {
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.03em;
+  display: flex;
 }
 .button-style {
   font-weight: 500;
@@ -149,4 +217,19 @@ button:focus {
   font-size: 16px;
   line-height: 1.9;
   color: #757575;
+}
+.portfolio-header {
+  text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.7;
+  overflow: hidden;
+  opacity: 0;
+}
+.clients {
+  display: flex;
+  flex-wrap: wrap;
+}
+.clients li {
+  margin: 30px 30px 30px 0;
 }
