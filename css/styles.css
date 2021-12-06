@@ -274,12 +274,11 @@ button:focus {
   margin-right: 30px;
   margin-bottom: 30px;
 }
-}
+
 .image-name {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
-  
 }
 .image-description {
   font-weight: normal;
